@@ -14,7 +14,7 @@ class ProjectStatus(models.IntegerChoices):
     PENDING   = 1,  'Pending'
     COMPLETED = 2, 'Completed'
     POSTPONED = 3, 'Postponed'
-    CANCELED  = 4, 'Canceled'
+    CANCELED  = 4, 'Canceled' 
 
 
 class Project(models.Model):

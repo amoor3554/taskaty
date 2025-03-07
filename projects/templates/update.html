@@ -6,7 +6,8 @@
         <input type="submit" value="Save Changes">
     </form>
     <a href="{% url 'delete_project' project.id %}">Delete</a>
-    {% include "project/task.html" with project=object %}
+    {% include "task.html" with project=object %}
 
+    <a href="{% url 'projects_list' %}">Back to projects list</a>
 
 {% endblock %}

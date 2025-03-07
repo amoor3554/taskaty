@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% load i18n %}
 {% block content %}
 
@@ -6,7 +7,7 @@
 <ul>
 
     {% for project in object_list %}
-        <li> {{ project }}  <a href="{% url "project_update" project.id %}">Edit</a> </li>
+        <li> {{ project }}  <a href="{% url "update_project" project.id %}">Edit</a> </li>
     {% empty %}
      <li> {% trans 'There are no projects to show' %} </li>
     
@@ -15,5 +16,6 @@
 
 </ul>
 
+<a href="{% url 'create_project' %}">Create new project</a>
 
 {% endblock %}

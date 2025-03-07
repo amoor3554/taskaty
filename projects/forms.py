@@ -24,4 +24,4 @@ class ProjectUpdateForm(forms.ModelForm):
         
         widgets = {'category' : forms.Select(),
                    'title' : forms.TextInput(),
-                    'status' : forms.Textarea }
+                    'status' : forms.Select()}

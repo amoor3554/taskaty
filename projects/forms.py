@@ -1,7 +1,7 @@
 from django import forms
 from . import models
 
-
+attr = {"class" : 'form-control'}
 
 
 class ProjectModelForm(forms.ModelForm):
@@ -11,17 +11,17 @@ class ProjectModelForm(forms.ModelForm):
 
         fields = ['title', 'description', 'category']
         
-        widgets = {'category' : forms.Select(),
-                   'title' : forms.TextInput(),
-                    'description' : forms.Textarea }
+        widgets = {'category' : forms.Select(attrs=attr),
+                   'title' : forms.TextInput(attrs=attr),
+                    'description' : forms.Textarea(attrs=attr) }
 
 class ProjectUpdateForm(forms.ModelForm):
     
     class Meta():
         model = models.Project
 
-        fields = ['title', 'description', 'status']
+        fields = ['category', 'title', 'status']
         
-        widgets = {'category' : forms.Select(),
-                   'title' : forms.TextInput(),
-                    'status' : forms.Select()}
+        widgets = {'category' : forms.Select(attrs=attr),
+                   'title' : forms.TextInput(attrs=attr),
+                    'status' : forms.Select(attrs=attr)}

@@ -13,6 +13,19 @@
                     <a class="nav-link active" aria-current="page" href="{% url 'projects_list' %}">{% trans 'home' %}</a>
                 </li>
             </ul>
+            {% if user.is_authenticated %}
+            <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ user.username }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">{% trans 'Profile' %}</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'logout' %}">{% trans 'Logout' %}</a></li>
+                    </ul>
+                </li>
+            </ul>
             <form method="get" class="d-flex">
                 <div class="input-group">
                     <input type='text'
@@ -25,6 +38,11 @@
                     </button>
                 </div>
             </form>
+            {% else %}
+                <a class="btn btn-outline-light" href="{% url 'login' %}">
+                    {% trans 'login' %}
+                </a>
+            {% endif %}
         </div>        
     </div>
 </nav>

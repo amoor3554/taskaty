@@ -1,5 +1,6 @@
 from django import forms
 from . import models
+from django.utils.translation import gettext as ar
 
 attr = {"class" : 'form-control'}
 
@@ -10,6 +11,10 @@ class ProjectModelForm(forms.ModelForm):
         model = models.Project
 
         fields = ['title', 'description', 'category']
+
+        labels = {'title' : ar('title'),
+                  'description' : ar('description'),
+                  'category' : ar('category')  }
         
         widgets = {'category' : forms.Select(attrs=attr),
                    'title' : forms.TextInput(attrs=attr),

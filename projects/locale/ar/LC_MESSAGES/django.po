@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-12 18:06+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\projects\templates\create.html:8
+#: .\projects\templates\projects_list.html:13
+#: .\projects\templates\projects_list.html:54
+msgid "New Project"
+msgstr "مشروع جديد"
+
+#: .\projects\templates\create.html:15
+msgid "Create"
+msgstr "انشاء"
+
+#: .\projects\templates\delete.html:4
+msgid "Alter"
+msgstr "بديل"
+
+#: .\projects\templates\delete.html:7
+msgid "Are you sure to delete"
+msgstr "هل انت متأكد من الحذف"
+
+#: .\projects\templates\delete.html:9 .\projects\templates\update.html:42
+msgid "Delete"
+msgstr "حذف"
+
+#: .\projects\templates\footer.html:5
+#, fuzzy
+#| msgid " All rights reserved."
+msgid "(c) 2025 Amoor. All rights reserved."
+msgstr "(c) 2025 Amoor. جميع الحقوق محفوظة"
+
+#: .\projects\templates\header.html:6
+msgid "Projects Managemant"
+msgstr "ادارة المشاريع"
+
+#: .\projects\templates\header.html:13
+msgid "home"
+msgstr "الصفحة الرئيسية"
+
+#: .\projects\templates\header.html:23
+msgid "Profile"
+msgstr "الحساب"
+
+#: .\projects\templates\header.html:25
+msgid "Logout"
+msgstr "تسجيل خروج"
+
+#: .\projects\templates\header.html:36
+msgid "Search"
+msgstr "بحث"
+
+#: .\projects\templates\header.html:45
+msgid "Register"
+msgstr "تسجيل"
+
+#: .\projects\templates\header.html:48
+msgid "login"
+msgstr "تسجيل دخول"
+
+#: .\projects\templates\projects_list.html:10
+msgid "MyProjects"
+msgstr "مشروعي"
+
+#: .\projects\templates\projects_list.html:39
+msgid "Edit"
+msgstr "تعديل"
+
+#: .\projects\templates\projects_list.html:51
+msgid "There are no projects to show."
+msgstr "لا يوجد اي مشاريع لعرضها"
+
+#: .\projects\templates\projects_list.html:65
+#: .\projects\templates\projects_list.html:70
+msgid "Previous"
+msgstr "السابق"
+
+#: .\projects\templates\projects_list.html:76
+#: .\projects\templates\projects_list.html:81
+msgid "Next"
+msgstr "التالي"
+
+#: .\projects\templates\task.html:32
+msgid "New Task"
+msgstr "مهمة جديدة"
+
+#: .\projects\templates\task.html:33
+msgid "Add"
+msgstr "اضافة"
+
+#: .\projects\templates\update.html:35
+msgid "Save"
+msgstr "حفظ"

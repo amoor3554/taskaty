@@ -132,9 +132,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = '/ProjectManagement'
+LOGIN_REDIRECT_URL = '/ProjectManager/project'
 
-LOGOUT_REDIRECT_URL = '/accounts/login'
+LOGOUT_REDIRECT_URL = '/'
 
 INTERNAL_IPS = [
     #...

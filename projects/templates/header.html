@@ -22,10 +22,11 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">{% trans 'Profile' %}</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{% url 'logout' %}">{% trans 'Logout' %}</a></li>
+                        <li> <a class="dropdown-item" href="{% url 'logout' %}">{% trans 'Logout' %}</a></li>
                     </ul>
+                    {% comment %} <form method="post">{% csrf_token %}{% include "form.html" with form=form%}<button type="submit">Logout</button></form>{% endcomment %}
                 </li>
-            </ul>
+            </u>
             <form method="get" class="d-flex">
                 <div class="input-group">
                     <input type='text'
@@ -39,6 +40,9 @@
                 </div>
             </form>
             {% else %}
+                <a class="btn btn-outline-light mx" href="{% url 'register' %}">
+                    {% trans 'Register' %}
+                </a>
                 <a class="btn btn-outline-light" href="{% url 'login' %}">
                     {% trans 'login' %}
                 </a>
